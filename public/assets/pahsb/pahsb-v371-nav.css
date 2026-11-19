@@ -1,0 +1,55 @@
+/* PAHSB V3.7.1 — Architectural split header. Scoped to V3. */
+body.urban31 .u31-header.u371-header{background:#fff;box-shadow:0 2px 18px rgba(6,33,56,.08);position:relative;z-index:40}
+body.urban31 .u371-header .u31-topline{height:28px;padding-inline:clamp(20px,4vw,80px);background:#071d33;color:#a9cadc;font-size:9px;letter-spacing:.15em}
+body.urban31 .u371-header .u31-nav{height:86px;padding:0 clamp(20px,4vw,80px) 0 0;max-width:none;margin:0;gap:clamp(16px,2vw,35px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #dde7ed;background:#fff}
+body.urban31 .u371-header .u31-brand{background:#0a2844;color:#fff;min-width:clamp(270px,29vw,440px);height:86px;padding:0 48px 0 clamp(20px,4vw,80px);display:flex;gap:15px;align-items:center;flex-shrink:0;position:relative;clip-path:polygon(0 0,100% 0,calc(100% - 28px) 100%,0 100%)}
+body.urban31 .u371-header .u31-brand-mark{width:53px;height:53px;flex:0 0 53px;border-radius:8px;background:#fff;border:1px solid #d0e0e9;box-shadow:none;padding:5px;display:flex;align-items:center;justify-content:center}
+body.urban31 .u371-header .u31-brand-mark img{width:100%;height:100%;display:block;object-fit:contain}
+body.urban31 .u371-header .u31-brand strong{font:800 23px/1.05 Manrope,Arial,sans-serif;color:#fff;letter-spacing:-.055em}
+body.urban31 .u371-header .u31-brand small{font-size:9px;letter-spacing:.17em;color:#add4e9;margin-top:6px}
+body.urban31 .u371-header .u31-links{margin-left:auto;gap:clamp(12px,1.8vw,27px);display:flex;align-items:center}
+body.urban31 .u371-header .u31-links>a:not(.u31-cta),body.urban31 .u371-header .u31-dd-toggle{font:700 12px/1.4 'DM Sans',Arial,sans-serif;color:#254359;letter-spacing:.015em;position:relative;white-space:nowrap}
+body.urban31 .u371-header .u31-links>a:not(.u31-cta):hover,body.urban31 .u371-header .u31-dd-toggle:hover{color:#047dbb}
+body.urban31 .u371-header .u31-links>a.is-current,body.urban31 .u371-header .u31-dd-toggle[aria-current=page]{color:#067fc2!important}
+body.urban31 .u371-header .u31-links>a.is-current::after,body.urban31 .u371-header .u31-dd-toggle[aria-current=page]::after{content:'';position:absolute;left:0;right:0;bottom:-18px;height:3px;background:#078bcb}
+body.urban31 .u371-header .u31-dd-toggle{display:inline-flex;align-items:center;gap:7px;padding:15px 0;background:transparent;border:0}
+body.urban31 .u371-header .u31-dd-toggle span{font-size:15px;transition:transform .2s}
+body.urban31 .u371-header .u31-dd.is-open .u31-dd-toggle span{transform:rotate(180deg)}
+body.urban31 .u371-header .u31-dd-panel{top:calc(100% + 9px);left:-20px;min-width:228px;padding:10px;border:1px solid #dbe8ef;border-top:3px solid #0794d1;border-radius:0 0 10px 10px;box-shadow:0 19px 45px rgba(6,33,56,.16);background:#fff}
+body.urban31 .u371-header .u31-dd-panel a{font-size:12px;line-height:1.5;padding:11px 13px}
+body.urban31 .u371-header .u31-cta{display:inline-flex;gap:16px;align-items:center;justify-content:center;min-height:44px;padding:12px 18px;font:800 11px/1.2 'DM Sans',Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase;color:#fff;background:#087fbd;border:1px solid #087fbd;border-radius:3px;box-shadow:0 4px 12px rgba(8,127,189,.12);white-space:nowrap;transition:background .2s,transform .2s}
+body.urban31 .u371-header .u31-cta:hover{background:#075985;transform:translateY(-1px)}
+body.urban31 .u371-header .u31-cta span{font-size:18px}
+body.urban31 .u371-header .u31-menu-toggle{display:none}
+body.urban31 .u371-header a:focus-visible,body.urban31 .u371-header button:focus-visible{outline:3px solid #25a6ec;outline-offset:3px}
+@media(max-width:1100px){
+ body.urban31 .u371-header .u31-nav{padding-right:23px;gap:12px}
+ body.urban31 .u371-header .u31-brand{min-width:290px;padding-left:24px;padding-right:44px}
+ body.urban31 .u371-header .u31-links{gap:15px}
+ body.urban31 .u371-header .u31-links>a:not(.u31-cta),body.urban31 .u371-header .u31-dd-toggle{font-size:11px}
+ body.urban31 .u371-header .u31-cta{padding-inline:12px;gap:8px}
+}
+@media(max-width:980px){
+ body.urban31 .u371-header .u31-nav{height:76px;padding-right:20px;position:relative}
+ body.urban31 .u371-header .u31-brand{height:76px;min-width:min(315px,75vw);padding-left:20px}
+ body.urban31 .u371-header .u31-brand-mark{width:46px;height:46px;flex-basis:46px}
+ body.urban31 .u371-header .u31-menu-toggle{display:block;margin-left:auto;border:1px solid #ccdfe9;border-radius:5px;padding:9px}
+ body.urban31 .u371-header .u31-links{display:none;position:absolute;top:76px;left:0;right:0;margin:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:12px 22px 25px;max-height:calc(100dvh - 104px);overflow-y:auto;box-shadow:0 24px 35px rgba(7,33,53,.18);border-top:3px solid #168bd2}
+ body.urban31 .u371-header .u31-links.is-open{display:flex}
+ body.urban31 .u371-header .u31-links>a:not(.u31-cta),body.urban31 .u371-header .u31-dd-toggle{font-size:14px;padding:14px 8px}
+ body.urban31 .u371-header .u31-links>a.is-current::after,body.urban31 .u371-header .u31-dd-toggle[aria-current=page]::after{display:none}
+ body.urban31 .u371-header .u31-dd-toggle{width:100%;justify-content:space-between}
+ body.urban31 .u371-header .u31-dd-panel{position:static;border:0;border-left:3px solid #168bd2;box-shadow:none;border-radius:4px;background:#f1f7fb;margin:0 5px 10px;min-width:0}
+ body.urban31 .u371-header .u31-cta{align-self:stretch;justify-content:space-between;margin-top:12px;min-height:46px}
+}
+@media(max-width:560px){
+ body.urban31 .u371-header .u31-topline{padding-inline:16px;height:26px;font-size:8px}
+ body.urban31 .u371-header .u31-topline span:first-child{display:none}
+ body.urban31 .u371-header .u31-nav{padding-right:14px;height:70px}
+ body.urban31 .u371-header .u31-brand{height:70px;min-width:0;width:min(270px,75vw);padding:0 36px 0 14px;gap:8px}
+ body.urban31 .u371-header .u31-brand-mark{width:41px;height:41px;flex-basis:41px}
+ body.urban31 .u371-header .u31-brand strong{font-size:18px}
+ body.urban31 .u371-header .u31-brand small{font-size:7px;letter-spacing:.09em}
+ body.urban31 .u371-header .u31-links{top:70px;padding-inline:15px;max-height:calc(100dvh - 96px)}
+}
+@media(prefers-reduced-motion:reduce){body.urban31 .u371-header .u31-cta,body.urban31 .u371-header .u31-dd-toggle span{transition:none!important}}

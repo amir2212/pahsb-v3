@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b2036">
+<meta name="description" content="Explore Puncak Alam through a new urban township experience. PAHSB Version 3 local design concept.">
+<title>PAHSB | An Urban Perspective — Version 3 Concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('assets/pahsb/pahsb-v31.css') }}?v=3.1.0">
+<script defer src="{{ asset('assets/pahsb/pahsb-v31.js') }}?v=3.1.0"></script>
+<link rel="stylesheet" href="{{ asset('assets/pahsb/pahsb-v36.css') }}?v=3.6.0">
+<script defer src="{{ asset('assets/pahsb/pahsb-v36.js') }}?v=3.6.0"></script>
+<link rel="stylesheet" href="{{ asset('assets/pahsb/pahsb-v37-nav.css') }}?v=3.7.0">
+<link rel="stylesheet" href="{{ asset('assets/pahsb/pahsb-v371-nav.css') }}?v=3.7.1">
+<link rel="stylesheet" href="{{ asset('assets/pahsb/pahsb-v372-nav.css') }}?v=3.7.2">
+</head>
+<body class="urban31">
+<a class="u31-skip" href="#main">Skip to content</a>
+<header class="u31-header u371-header u372-header" id="top">
+ <div class="u31-topline"><span>PAHSB / PUNCAK ALAM</span><span>ARCHITECTURAL PERSPECTIVE <i></i> VERSION 03</span></div>
+ <nav class="u31-nav" aria-label="Main navigation">
+  <a class="u31-brand" href="{{ route('pahsb.home') }}" aria-label="PAHSB Home"><span class="u31-brand-mark"><img src="{{ asset('assets/pahsb/media/f5b358b6-logo-puncak-alam.png') }}" alt="" width="53" height="53"></span><span><strong>PAHSB</strong><small>PUNCAK ALAM HOUSING</small></span></a>
+  <button class="u31-menu-toggle" type="button" aria-expanded="false" aria-controls="u31-menu" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+  <div class="u31-links" id="u31-menu">
+   <a class="is-current" aria-current="page" href="{{ route('pahsb.home') }}">Home</a>
+   <div class="u31-dd"><button type="button" class="u31-dd-toggle" aria-expanded="false" aria-controls="u372-about-panel">About <span aria-hidden="true">⌄</span></button><div class="u31-dd-panel" id="u372-about-panel"><a href="{{ route('pahsb.about', ['section'=>'overview']) }}">Company Overview</a><a href="{{ route('pahsb.about', ['section'=>'board-of-directors']) }}">Board of Directors</a><a href="{{ route('pahsb.about', ['section'=>'vision-mission']) }}">Vision &amp; Mission</a><a href="{{ route('pahsb.about', ['section'=>'puncak-alam-township']) }}">Puncak Alam Township</a></div></div>
+   <a href="{{ route('pahsb.projects') }}">Projects</a>
+   <a href="{{ route('pahsb.news') }}">News</a>
+   <div class="u31-dd u372-contact-dd"><button type="button" class="u31-dd-toggle u372-contact-toggle" aria-expanded="false" aria-controls="u372-contact-panel">Contact <span aria-hidden="true">⌄</span></button><div class="u31-dd-panel" id="u372-contact-panel"><a href="{{ route('pahsb.enquiry') }}">Enquiry</a><a href="{{ route('pahsb.registration') }}">Registration</a></div></div>
+   <a class="u31-cta" href="{{ route('pahsb.enquiry') }}">Get in Touch <span aria-hidden="true">↗</span></a>
+  </div>
+ </nav>
+</header>
+<main id="main">
+  <section class="u31-hero" aria-label="Puncak Alam township introduction">
+   <div class="u31-hero-media" aria-hidden="true">
+     <div class="u31-photo is-active" style="background-image:url('{{ asset('assets/pahsb/media/5321ccf9-puncak_alam_slide_b.jpg') }}')"></div>
+     <div class="u31-photo" style="background-image:url('{{ asset('assets/pahsb/media/d2767b09-puncak_alam_slide_c.jpg') }}')"></div>
+     <div class="u31-photo" style="background-image:url('{{ asset('assets/pahsb/media/467d67d3-puncak_alam_slide_d.jpg') }}')"></div>
+   </div>
+   <div class="u31-hero-tint"></div>
+   <div class="u31-hero-inner"><div class="u31-hero-copy"><p class="u31-kicker"><b>01</b> / REIMAGINING PUNCAK ALAM</p><h1>Space to live.<br><em>Room to grow.</em></h1><p class="u31-hero-sub">A fresh perspective on the places, connections and everyday experiences that shape Puncak Alam.</p><div class="u31-hero-buttons"><a class="u31-btn u31-btn-blue" href="{{ route('pahsb.projects') }}">Explore developments <span>↗</span></a><a class="u31-text-link" href="{{ route('pahsb.about', ['section'=>'overview']) }}">Discover PAHSB <span>↗</span></a></div></div></div>
+   <div class="u31-hero-bottom"><span>ROOTED IN PUNCAK ALAM</span><div class="u31-slide-controls"><span class="u31-slide-counter"><b id="u31-slide-current">01</b> / 03</span><button type="button" data-slide="prev" aria-label="Previous photo">←</button><button type="button" data-slide="next" aria-label="Next photo">→</button><button type="button" id="u31-slide-pause" aria-label="Pause slideshow" aria-pressed="false">Ⅱ</button></div><span class="u31-scroll-note">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
+  </section>
+  <section class="u31-intro u31-pad" id="discover"><div class="u31-container"><div class="u31-section-head" data-u31-reveal><span class="u31-overline">/ 02 — THE BIGGER PICTURE</span><span class="u31-section-id">DISCOVER THE PLACE</span></div><div class="u31-intro-grid"><div data-u31-reveal><h2>Not just a place.<br><span>A way of life.</span></h2></div><div data-u31-reveal><p class="u31-lead">Puncak Alam brings together homes, neighbourhoods and everyday destinations in a growing township environment.</p><p>Explore the places that give the township its identity — from residential neighbourhoods and educational landmarks to shared community spaces.</p><a class="u31-arrow-link" href="{{ route('pahsb.about', ['section'=>'puncak-alam-township']) }}">Experience the township <span>↗</span></a></div></div></div></section>
+  <section class="u31-visual-story"><div class="u31-story-photo"><img src="{{ asset('assets/pahsb/media/8e83c79a-pahsb-overview-pano.jpg') }}" alt="Panoramic view of Puncak Alam township" loading="lazy"></div><div class="u31-story-card" data-u31-reveal><span class="u31-overline">PUNCAK ALAM / MALAYSIA</span><h2>Built around<br><em>possibility.</em></h2><p>Discover the landscape and neighbourhood experiences that make this place distinctive.</p><a href="{{ route('pahsb.about', ['section'=>'overview']) }}">Our story <span>↗</span></a></div></section>
+  <section class="u31-explore u31-pad"><div class="u31-container"><div class="u31-section-head" data-u31-reveal><span class="u31-overline">/ 03 — THE EVERYDAY EXPERIENCE</span><span class="u31-section-id">LIVE / CONNECT / DISCOVER</span></div><div class="u31-explore-title" data-u31-reveal><h2>More to explore.<br><span>More to experience.</span></h2><p>Discover the distinct sides of township life.</p></div><div class="u31-tabbar" role="tablist" aria-label="Township experiences"><button class="is-active" role="tab" aria-selected="true" aria-controls="u31-tab-panel" id="u31-tab-res" data-u31-tab="res">01 / Residential</button><button role="tab" aria-selected="false" aria-controls="u31-tab-panel" id="u31-tab-edu" data-u31-tab="edu">02 / Education</button><button role="tab" aria-selected="false" aria-controls="u31-tab-panel" id="u31-tab-com" data-u31-tab="com">03 / Community</button></div><div id="u31-tab-panel" role="tabpanel" aria-labelledby="u31-tab-res" class="u31-tab-content"><div class="u31-tab-image"><img id="u31-tab-image" src="{{ asset('assets/pahsb/media/f283245e-bandar-puncak-alam-residentials.jpg') }}" alt="Residential neighbourhood in Puncak Alam" loading="lazy"></div><div class="u31-tab-copy"><span id="u31-tab-code">01 / RESIDENTIAL</span><h3 id="u31-tab-heading">Neighbourhoods for everyday living.</h3><p id="u31-tab-description">Explore residential spaces and the neighbourhood character of Puncak Alam.</p><a href="{{ route('pahsb.about', ['section'=>'puncak-alam-township']) }}">View township highlights <span>↗</span></a></div></div></div></section>
+  <section class="u31-develop u31-pad"><div class="u31-container"><div class="u31-section-head u31-on-dark" data-u31-reveal><span class="u31-overline">/ 04 — DISCOVER DEVELOPMENTS</span><span class="u31-section-id">A CLOSER LOOK</span></div><div class="u31-develop-title" data-u31-reveal><h2>Places with<br><span>purpose.</span></h2><a href="{{ route('pahsb.projects') }}">View all developments <span>↗</span></a></div><div class="u31-cards"><a class="u31-card" href="{{ route('pahsb.projects') }}" data-u31-reveal><div class="u31-card-img"><img src="{{ asset('assets/pahsb/media/53d06664-800x480phase1-a-400x225.jpg') }}" alt="PAHSB residential development image" loading="lazy"><span>01</span></div><div class="u31-card-desc"><div><small>RESIDENTIAL</small><h3>Neighbourhoods</h3></div><b aria-hidden="true">↗</b></div></a><a class="u31-card" href="{{ route('pahsb.projects') }}" data-u31-reveal><div class="u31-card-img"><img src="{{ asset('assets/pahsb/media/2acd6451-800x480commercial-c-400x225.jpg') }}" alt="PAHSB commercial development image" loading="lazy"><span>02</span></div><div class="u31-card-desc"><div><small>COMMERCIAL</small><h3>Local Destinations</h3></div><b aria-hidden="true">↗</b></div></a><a class="u31-card" href="{{ route('pahsb.about', ['section'=>'puncak-alam-township']) }}" data-u31-reveal><div class="u31-card-img"><img src="{{ asset('assets/pahsb/media/0da8552d-800x480uitm-a-400x225.jpg') }}" alt="Educational destination in Puncak Alam" loading="lazy"><span>03</span></div><div class="u31-card-desc"><div><small>EDUCATION</small><h3>Future Connections</h3></div><b aria-hidden="true">↗</b></div></a></div><p class="u31-content-note">Images and categories reference PAHSB source material. Development status requires company confirmation.</p></div></section>
+  <section class="u31-connect u31-pad"><div class="u31-container u31-connect-layout" data-u31-reveal><div><span class="u31-overline">/ 05 — START THE CONVERSATION</span><h2>Let's shape what's<br><em>next.</em></h2><p>Questions about the township or PAHSB? Reach out through our enquiry page.</p></div><a class="u31-connect-circle" href="{{ route('pahsb.enquiry') }}" aria-label="Contact PAHSB">LET'S CONNECT <span>↗</span></a></div></section>
+</main>
+<footer class="u31-footer"><div class="u31-container"><div class="u31-footer-top"><a class="u31-footer-wordmark" href="{{ route('pahsb.home') }}">PAHSB<span>.</span></a><div class="u31-footer-nav"><a href="{{ route('pahsb.about', ['section'=>'overview']) }}">About</a><a href="{{ route('pahsb.projects') }}">Developments</a><a href="{{ route('pahsb.news') }}">Stories</a><a href="{{ route('pahsb.registration') }}">Register Interest</a><a href="{{ route('pahsb.enquiry') }}">Enquiry</a></div></div><div class="u31-footer-base"><span>© {{ date('Y') }} Puncak Alam Housing Sdn Bhd</span><span>Version 3 design concept · Local development preview · Not an official launch</span><a href="#top">Back to top ↑</a></div></div></footer>
+<script src="{{ asset('assets/pahsb/pahsb-v372-nav.js') }}?v=3.7.2" defer></script>
+</body></html>

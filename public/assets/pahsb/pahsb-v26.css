@@ -1,0 +1,36 @@
+/* PAHSB V2.6 | shared EcoWorld-inspired quality-of-life layer */
+:root{--v26-forest:#173f34;--v26-leaf:#286954;--v26-ivory:#faf8f1;--v26-sage:#e7eee6;--v26-ink:#1b2d26;--v26-radius:16px}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+:where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:3px solid #c08b3d!important;outline-offset:4px!important}
+:where(input,textarea,select){accent-color:var(--v26-leaf)}
+:where(a,button){-webkit-tap-highlight-color:transparent}
+:where(button,[type=submit],[type=button]){touch-action:manipulation}
+:where(.v21,.v22,.v23,.v24,.v25) :where(h1,h2,h3){text-wrap:balance}
+:where(.v21,.v22,.v23,.v24,.v25) :where(p){overflow-wrap:break-word}
+/* Unified header: small polish only; existing dropdown script remains authoritative */
+.p61-header{z-index:1000!important;isolation:isolate}
+.p61-header .p61-line{min-height:74px}
+.p61-header .p61-nav{align-items:center}
+.p61-header .p61-brand img{object-fit:contain}
+.p61-header .p61-nav>a:not(.p61-cta),.p61-header .p61-dropbtn{transition:color .22s ease,opacity .22s ease}
+.p61-header .p61-panel{box-shadow:0 16px 45px rgba(18,54,42,.15)!important}
+.p61-header .p61-cta{transition:transform .25s ease,box-shadow .25s ease}
+.p61-header .p61-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(28,74,57,.22)}
+.p61-header a[aria-current=page]{font-weight:750}
+/* Subtle shared footer visual finish. Do not hide existing content/links. */
+footer a{transition:opacity .2s ease}
+footer a:hover{opacity:.82}
+footer a:focus-visible{outline-offset:5px}
+/* Back to top, appended by V2.6 script */
+.v26-backtop{position:fixed;right:clamp(14px,3vw,30px);bottom:clamp(14px,3vw,30px);width:48px;height:48px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.3);border-radius:50%;color:white;background:var(--v26-forest);box-shadow:0 10px 30px rgba(0,0,0,.18);z-index:990;cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .2s ease,transform .2s ease,background .2s ease}
+.v26-backtop.is-visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.v26-backtop:hover{background:var(--v26-leaf)}
+.v26-backtop svg{width:20px;height:20px}
+/* Skip link: visible only while focused */
+.v26-skip{position:fixed;top:10px;left:12px;z-index:1100;background:#fff;color:#173f34;border:2px solid #173f34;padding:12px 17px;border-radius:8px;font:700 14px/1.25 system-ui,sans-serif;transform:translateY(-160%)}
+.v26-skip:focus{transform:translateY(0)}
+@media(max-width:900px){.p61-header .p61-line{min-height:66px}.p61-header .p61-nav{max-height:calc(100dvh - 68px);overflow-y:auto;overscroll-behavior:contain}.v26-backtop{width:44px;height:44px}}
+@media(max-width:600px){.p61-header .p61-brand img{max-height:48px}.v26-backtop{right:14px;bottom:14px}input,select,textarea{font-size:max(16px,1em)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

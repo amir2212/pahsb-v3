@@ -1,0 +1,106 @@
+/* PAHSB V2.8 - Floating Navbar + Hero Fine Polish
+   Scoped to V2.7 navbar and EcoWorld-inspired V2 hero classes. */
+:root { --p28-forest:#205b46; --p28-lime:#e6efda; }
+
+/* Slimmer floating bar, balanced brand and navigation */
+header.p61-header.v27-header { padding-bottom:12px!important; }
+header.p61-header.v27-header::before {
+  padding-top:8px!important; padding-bottom:6px!important;
+  font-size:10px!important; letter-spacing:.16em!important;
+}
+header.p61-header.v27-header .p61-line {
+  min-height:66px!important; padding:5px 8px 5px 17px!important;
+  gap:14px!important; border-radius:999px!important;
+  box-shadow:0 10px 25px rgba(25,70,48,.085)!important;
+}
+header.p61-header.v27-header .p61-brand { gap:11px!important; }
+header.p61-header.v27-header .p61-brand img {
+  width:52px!important; height:52px!important; max-width:52px!important;
+  max-height:52px!important; object-fit:contain;
+}
+header.p61-header.v27-header .p61-brand strong { font-size:16px!important; }
+header.p61-header.v27-header .p61-nav { gap:1px!important; }
+header.p61-header.v27-header .p61-nav>a:not(.p61-cta),
+header.p61-header.v27-header .p61-dropbtn {
+  padding-left:13px!important; padding-right:13px!important;
+  min-height:40px!important;
+}
+header.p61-header.v27-header .p61-cta {
+  min-height:43px!important; padding:11px 21px!important;
+  border-radius:999px!important; margin-left:8px!important;
+}
+header.p61-header.v27-header .p61-nav>a:not(.p61-cta):hover,
+header.p61-header.v27-header .p61-dropbtn:hover {
+  background:#eaf2e1!important; transform:translateY(-1px);
+}
+
+/* The supplied screenshot is Company Overview, not the homepage.
+   Target the actual V2.2 hero and CTA from that screenshot. */
+.eco22.eco22-overview .eco22-hero-shade {
+  background:linear-gradient(90deg,rgba(7,34,27,.67) 0%,rgba(8,38,30,.34) 53%,rgba(8,38,30,.08) 100%),
+             linear-gradient(0deg,rgba(7,34,27,.37),transparent 38%)!important;
+}
+.eco22.eco22-overview .eco22-hero h1 {
+  font-size:clamp(52px,6.3vw,98px)!important;
+  max-width:1030px!important; line-height:1.055!important;
+  text-wrap:balance;
+}
+.eco22.eco22-overview .eco22-hero-content>p:not(.eco22-eyebrow) {
+  max-width:630px; text-shadow:0 1px 8px rgba(7,35,27,.28);
+}
+.eco22.eco22-overview .eco22-hero-link {
+  display:inline-flex!important; align-items:center; justify-content:center;
+  gap:20px; min-height:47px; margin-top:2px;
+  padding:12px 20px!important; border:1px solid rgba(255,255,255,.85)!important;
+  border-radius:999px!important; background:rgba(13,47,37,.25)!important;
+  color:#fff!important; backdrop-filter:blur(4px);
+  text-decoration:none!important; font-weight:650; letter-spacing:.025em;
+  transition:background .2s ease,transform .2s ease,border-color .2s ease;
+}
+.eco22.eco22-overview .eco22-hero-link span { margin-left:0!important; font-size:17px; }
+.eco22.eco22-overview .eco22-hero-link:hover {
+  background:rgba(242,247,236,.20)!important; transform:translateY(-2px);
+  border-color:white!important;
+}
+.eco22.eco22-overview .eco22-hero-link:focus-visible,
+header.p61-header.v27-header :is(a,button):focus-visible { outline:3px solid #c0e59a!important; outline-offset:3px!important; }
+
+/* Also fine-tune the V2.1 homepage hero without replacing its established design. */
+.eco21 .eco21-hero h1 { font-size:clamp(53px,6.4vw,101px)!important; text-wrap:balance; }
+.eco21 .eco21-hero-overlay {
+  background:linear-gradient(90deg,rgba(7,35,27,.66),rgba(7,35,27,.12) 85%),
+             linear-gradient(0deg,rgba(7,35,27,.30),transparent 40%)!important;
+}
+
+@media(max-width:1100px) and (min-width:901px) {
+  header.p61-header.v27-header .p61-line { padding-left:13px!important; }
+  header.p61-header.v27-header .p61-nav>a:not(.p61-cta),
+  header.p61-header.v27-header .p61-dropbtn { padding-left:8px!important;padding-right:8px!important; }
+  header.p61-header.v27-header .p61-brand img {width:46px!important;height:46px!important;}
+}
+@media(max-width:900px) {
+  header.p61-header.v27-header { padding:0 12px 11px!important; }
+  header.p61-header.v27-header::before { padding:7px 11px 6px!important;font-size:8px!important; }
+  header.p61-header.v27-header .p61-line {
+    min-height:65px!important; padding:7px 11px!important;
+    border-radius:22px!important;
+  }
+  header.p61-header.v27-header .p61-brand img { width:45px!important;height:45px!important; }
+  header.p61-header.v27-header .p61-nav>a:not(.p61-cta),
+  header.p61-header.v27-header .p61-dropbtn { min-height:49px!important; padding:12px 14px!important; }
+  header.p61-header.v27-header .p61-cta { min-height:48px!important; margin:12px 0 0!important; }
+  .eco22.eco22-overview .eco22-hero h1 { font-size:clamp(43px,9vw,72px)!important; }
+  .eco21 .eco21-hero h1 { font-size:clamp(45px,9vw,75px)!important; }
+}
+@media(max-width:600px) {
+  .eco22.eco22-overview .eco22-hero-shade {
+    background:linear-gradient(90deg,rgba(7,34,27,.76),rgba(7,34,27,.25)),
+               linear-gradient(0deg,rgba(7,34,27,.35),transparent 40%)!important;
+  }
+  .eco22.eco22-overview .eco22-hero h1 { font-size:clamp(43px,10.5vw,62px)!important; }
+  .eco22.eco22-overview .eco22-hero-link { min-height:46px; padding:11px 18px!important; }
+  .eco21 .eco21-hero h1 { font-size:clamp(45px,10.3vw,65px)!important; }
+}
+@media(prefers-reduced-motion:reduce) {
+  header.p61-header.v27-header *, .eco22.eco22-overview .eco22-hero-link { transition:none!important;transform:none!important; }
+}
